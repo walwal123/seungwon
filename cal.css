@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outbox {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background-color: #FFFFE0
+}
+
+.inbox {
+    display: flex;
+    border: 2px solid #A9A9A9;
+    background-color: #C0C0C0;
+    width: 350px;
+    height: 500px;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.number {
+    display: flex;
+    border: 2px solid #A9A9A9;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px #000000 inset;
+    flex: 10%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3%;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.calculator {
+    display: flex;
+    flex: 70%;
+    border: 2px solid #A9A9A9;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.buttons {
+    display: flex;
+    flex: auto;
+    justify-content: space-evenly;
+}
+
+button {
+    border: 2px solid #A9A9A9;
+    width: 62px;
+    height: 62px;
+    margin: 2%;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+.yl {
+    background-color: #FAFAD2;
+}
+
+.ans {
+    background-color: #4682B4;
+    color: #ffffff;
+}
+
+.gray:active {
+    box-shadow: 0 0 #000000;
+    background-color: #6B6B6C;
+    color: white;
+}
+
+.yl:active {
+    box-shadow: 0 0 #000000;
+    background-color: #BDB76B;
+    color: white;
+}
+
+.ans:active {
+    box-shadow: 0 0 #000000;
+    background-color: #00008B;
+    color: white;
+}
