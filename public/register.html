@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원등록</title>
+    <link rel="stylesheet" href="register_style.css">
+</head>
+
+<body>
+    <div class="signup-container">
+        <div class="signup-form">
+            <h2>Sign Up</h2>
+            <div class="group">
+                <label class="group_image" for="username">Username</label>
+                <input type="text" id="username" class="group_input" required>
+                <div class="error" id="username-error"></div>
+            </div>
+            <div class="group">
+                <label class="group_image" for="email">Email</label>
+                <input type="email" id="email" class="group_input" required>
+                <div class="error" id="email-error"></div>
+            </div>
+            <div class="group">
+                <label class="group_image" for="password">Password</label>
+                <input type="password" id="password" class="group_input" required>
+                <div class="error" id="password-error"></div>
+            </div>
+            <button class="register_btn" onclick="registerUser()">Register</button>
+        </div>
+        <div class="signup_image">
+            <div class="resize_image">
+                <img src="wal3.png" alt="Sign Up Image">
+            </div>
+        </div>
+    </div>
+
+    <script src="register_script.js"></script>
+</body>
+
+</html>

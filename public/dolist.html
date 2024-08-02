@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일정 관리</title>
+    <link rel="stylesheet" href="dolist.css">
+</head>
+
+<body>
+    <div class="signup-container">
+        <div class="signup-form">
+            <h1>To-do List</h1>
+            <div class="list-input">
+                <div class="add-schedule">
+                    <h2>일정 추가하기</h2>
+                    <div class="day-selection">
+                        <div class="day-box" data-day="monday">월요일</div>
+                        <div class="day-box" data-day="tuesday">화요일</div>
+                        <div class="day-box" data-day="wednesday">수요일</div>
+                        <div class="day-box" data-day="thursday">목요일</div>
+                        <div class="day-box" data-day="friday">금요일</div>
+                        <div class="day-box" data-day="saturday">토요일</div>
+                        <div class="day-box" data-day="sunday">일요일</div>
+                    </div>
+                    <div class="schedule-inputs">
+                        <input type="text" placeholder="일정 이름" class="schedule-name" id="schedule-name">
+                        <input type="time" class="schedule-time" id="schedule-time">
+                        <input type="hidden" id="selected-day">
+                    </div>
+                    <button class="add-button" id="add-button">추가</button>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="checklist" id="checklist">
+
+            </div>
+        </div>
+    </div>
+    <script src="dolist.js"></script>
+</body>
+
+</html>

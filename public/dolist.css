@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    height: 800px;
+}
+
+.signup-form {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #eeeded;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.add-schedule {
+    width: 100%;
+}
+
+.add-schedule h2 {
+    margin-bottom: 20px;
+}
+
+.day-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 20px;
+}
+
+.day-box {
+    flex: 1 1 calc(14% - 2px);
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 14px;
+}
+
+.day-box:nth-child(6) {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.day-box:nth-child(7) {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.day-box:hover {
+    background-color: #f0f0f0;
+    border-color: #888;
+}
+
+.schedule-inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.schedule-name,
+.schedule-time {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.schedule-name {
+    margin-right: 10px;
+}
+
+.add-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.checklist {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.checklist-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.checklist-row.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.checklist-item {
+    flex: 1;
+    text-align: center;
+}
+
+.checklist-checkbox {
+    margin-right: 10px;
+}
+
+.checklist-item:nth-child(1) {
+    flex: 0 0 auto;
+    width: 50px;
+}
+
+.checklist-item:nth-child(2) {
+    flex: 2;
+}
+
+.checklist-item:nth-child(3) {
+    flex: 1;
+}
+
+.checklist-item:nth-child(4) {
+    flex: 1;
+}
+
+.day-box.selected {
+    background-color: #003773;
+    color: #fff;
+    border-color: #007bff;
+}
